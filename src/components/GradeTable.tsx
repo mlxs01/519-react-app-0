@@ -5,10 +5,6 @@
  * When you come to office hours for help, we will ask you if you have written
  * this function and tested your project using it.
  */
-export function dummyData() {
-  return [];
-}
-
 import React, { useState } from 'react';
 import GradeTableProps from '../types/api_types';
 import Paper from '@mui/material/Paper';
@@ -19,6 +15,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TablePagination from '@mui/material/TablePagination';
+
+export function dummyData() {
+  return [];
+}
 
 const GradeTable: React.FC<GradeTableProps> = ({ studentData }) => {
   const [page, setPage] = useState(0);
