@@ -37,7 +37,6 @@ function App() {
    * You will also need to explore the use of async/await.
    *
    */
-  // eslint-disable-next-line
   useEffect(() => {
     const fetchData = async () => {
         // Fetch the list of classes
@@ -109,6 +108,7 @@ function App() {
         fetchAndSetGrades();
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currFilteredAssignments]);
 
   useEffect(() => { // Runs after new student grades are avail
@@ -130,6 +130,7 @@ function App() {
       setData(updatedStudentData);
       setIsLoading(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allGrades]);
 
 
