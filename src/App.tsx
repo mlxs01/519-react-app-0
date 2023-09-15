@@ -5,7 +5,7 @@ import { Select, Typography, MenuItem } from "@mui/material";
 /**
  * You will find globals from this file useful!
  */
-import { MY_BU_ID, BASE_API_URL, SEMESTER, TOKEN, GET_DEFAULT_HEADERS } from "./globals";
+import { MY_BU_ID, BASE_API_URL, SEMESTER, GET_DEFAULT_HEADERS } from "./globals";
 import { IUniversityClass, IUniversityAssignments} from "./types/api_types";
 import GradeTable from "./components/GradeTable";
 import GradeTableProps from "./types/api_types";
@@ -37,6 +37,7 @@ function App() {
    * You will also need to explore the use of async/await.
    *
    */
+  // eslint-disable-next-line
   useEffect(() => {
     const fetchData = async () => {
         // Fetch the list of classes
